@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Workshop - Tuntiharjoitus</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to CSS Workshop</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document
+                written in HTML. It enables you to separate content from design, making your web pages more flexible and
+                easier to maintain.</p>
+            <p>In this workshop, we'll explore fundamental CSS concepts including selectors, properties, colors,
+                typography, and layout techniques.</p>
+        </section>
+
+        <section id="content">
+            <h2>Key Topics</h2>
+            <article>
+                <h3>CSS Selectors</h3>
+                <p>Selectors are patterns used to select the elements you want to style. They include element selectors,
+                    class selectors, ID selectors, and more advanced pseudo-class selectors.</p>
+            </article>
+
+            <article>
+                <h3>Box Model</h3>
+                <p>The CSS box model describes the rectangular boxes generated for elements. It consists of margins,
+                    borders, padding, and the actual content area.</p>
+            </article>
+
+            <article>
+                <h3>Colors and Typography</h3>
+                <p>CSS provides various ways to specify colors (hex, RGB, HSL) and control typography through font
+                    properties like font-family, font-size, and line-height.</p>
+            </article>
+
+            <div class="highlight-box">
+                <h4>Important Note</h4>
+                <p>Practice is key to mastering CSS. Experiment with different properties and values to see how they
+                    affect your designs.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Laurea CSS Workshop by Jari Kovis. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop" title="Back to top">
+        ↑
+    </a>
+
+    <script>
+        // Show/hide button based on scroll position
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll to top when clicked
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
