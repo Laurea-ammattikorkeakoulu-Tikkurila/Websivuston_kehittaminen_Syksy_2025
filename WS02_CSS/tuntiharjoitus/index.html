@@ -9,76 +9,76 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to CSS Workshop</h1>
+     <header>
+        <h1>Tervetuloa CSS-työpajaan</h1>
         <nav>
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#introduction">Johdanto</a></li>
+                <li><a href="#content">Sisältö</a></li>
+                <li><a href="#contact">Yhteystiedot</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="introduction">
-            <h2>Introduction to CSS</h2>
-            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document
-                written in HTML. It enables you to separate content from design, making your web pages more flexible and
-                easier to maintain.</p>
-            <p>In this workshop, we'll explore fundamental CSS concepts including selectors, properties, colors,
-                typography, and layout techniques.</p>
+            <h2>Johdanto CSS:ään</h2>
+            <p>CSS (Cascading Style Sheets) on tyylitiedostokieli, jota käytetään HTML-dokumentin ulkoasun kuvaamiseen.
+                Se mahdollistaa sisällön ja ulkoasun erottamisen toisistaan, mikä tekee web-sivuistasi joustavampia ja
+                helpompia ylläpitää.</p>
+            <p>Tässä työpajassa tutustumme CSS:n perusasioihin, kuten valitsimiin, ominaisuuksiin, väreihin,
+                typografiaan ja asettelutekniikoihin.</p>
         </section>
 
         <section id="content">
-            <h2>Key Topics</h2>
+            <h2>Keskeiset aiheet</h2>
             <article>
-                <h3>CSS Selectors</h3>
-                <p>Selectors are patterns used to select the elements you want to style. They include element selectors,
-                    class selectors, ID selectors, and more advanced pseudo-class selectors.</p>
+                <h3>CSS-valitsimet</h3>
+                <p>Valitsimet ovat malleja, joita käytetään niiden elementtien valitsemiseen, joita haluat tyylitellä. Niihin kuuluvat elementtivalitsimet,
+                    luokkavalitsimet, ID-valitsimet ja edistyneemmät pseudo-luokkavalitsimet.</p>
             </article>
 
             <article>
-                <h3>Box Model</h3>
-                <p>The CSS box model describes the rectangular boxes generated for elements. It consists of margins,
-                    borders, padding, and the actual content area.</p>
+                <h3>Laatikkomalli</h3>
+                <p>CSS:n laatikkomalli kuvaa elementeille luotavia suorakulmioita. Se koostuu marginaaleista,
+                    reunuksista, täytteestä ja varsinaisesta sisältöalueesta.</p>
             </article>
 
             <article>
-                <h3>Colors and Typography</h3>
-                <p>CSS provides various ways to specify colors (hex, RGB, HSL) and control typography through font
-                    properties like font-family, font-size, and line-height.</p>
+                <h3>Värit ja typografia</h3>
+                <p>CSS tarjoaa erilaisia tapoja määritellä värejä (hex, RGB, HSL) ja hallita typografiaa fontti-
+                    ominaisuuksien, kuten font-family, font-size ja line-height, avulla.</p>
             </article>
 
             <div class="highlight-box">
-                <h4>Important Note</h4>
-                <p>Practice is key to mastering CSS. Experiment with different properties and values to see how they
-                    affect your designs.</p>
+                <h4>Tärkeä huomautus</h4>
+                <p>Harjoittelu on avain CSS:n hallitsemiseen. Kokeile erilaisia ominaisuuksia ja arvoja nähdäksesi, miten ne
+                    vaikuttavat suunnitteluihisi.</p>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Information</h2>
+            <h2>Yhteystiedot</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Nimi:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">Sähköposti:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
+                    <label for="message">Viesti:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit">Lähetä viesti</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Laurea CSS Workshop by Jari Kovis. All rights reserved.</p>
+        <p>&copy; 2025 Laurea CSS-työpaja, Jari Kovis. Kaikki oikeudet pidätetään.</p>
     </footer>
 
     <!-- Back to Top Button -->
@@ -91,7 +91,7 @@
         const backToTopButton = document.getElementById('backToTop');
 
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
+            if (window.pageYOffset > 50) {
                 backToTopButton.classList.add('show');
             } else {
                 backToTopButton.classList.remove('show');
