@@ -1,4 +1,4 @@
-Tänne rakennan verkkosivuja osana Web-sivuston kehittäminen -kurssia Laurea-ammattikorkeakoulussa syksyllä 2025.
+Tänne rakennan verkkosivuja osana Web-sivuston kehittäminen -opintojaksoa Laurea-ammattikorkeakoulussa syksyllä 2025.
 
 # Työpajat (WS01–WS07)
 
