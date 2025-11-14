@@ -1,22 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jarin sivusto</title>
+    <title>Web-sivuston kehittäminen - Laurea 2025</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Tervetuloa</h1>
-    <p>This is a simple LAUREA page.</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Web-sivuston kehittäminen</h1>
+            <p class="subtitle">Laurea-ammattikorkeakoulu | Syksy 2025</p>
+            <p class="student-info">Opiskelija: Jari Kovis</p>
+        </div>
+    </header>
 
-    <h2>Workshop Exercises</h2>
-    <ul>
-        <li><a href="WS01_HTML/tuntiharjoitus/">WS01 HTML - Tuntiharjoitus</a></li>
-        <li><a href="WS02_CSS/tuntiharjoitus/">WS02 CSS - Tuntiharjoitus</a></li>
-    </ul>
+    <main class="container">
+        <section class="course-intro">
+            <h2>Kurssin kuvaus</h2>
+            <p>Tervetuloa Web-sivuston kehittäminen -kurssille! Tällä kurssilla opimme modernin web-kehityksen perusteet
+                HTML:stä, CSS:stä ja responsiivisesta suunnittelusta aina Bootstrap-frameworkiin ja lopulliseen
+                projektityöhön.</p>
+        </section>
+
+        <section class="workshops">
+            <h2>Työpajat ja harjoitukset</h2>
+            <p class="section-description">Kurssiin kuuluu seitsemän työpajaa, joissa käsitellään eri osa-alueita
+                web-kehityksestä.</p>
+
+            <div class="workshop-grid">
+                <div class="workshop-card">
+                    <div class="workshop-number">01</div>
+                    <h3>HTML Perusteet</h3>
+                    <p>HTML-rakenne, elementit, semanttinen HTML ja saavutettavuus</p>
+                    <a href="WS01_HTML/tuntiharjoitus/index.html" class="workshop-link">Tuntiharjoitus →</a>
+                    <a href="WS01_HTML/" class="workshop-link secondary">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">02</div>
+                    <h3>CSS Perusteet</h3>
+                    <p>Valitsimet, värit, typografia, box model ja perusasemointi</p>
+                    <a href="WS02_CSS/tuntiharjoitus/index.html" class="workshop-link">Tuntiharjoitus →</a>
+                    <a href="WS02_CSS/" class="workshop-link secondary">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">03</div>
+                    <h3>CSS Advanced</h3>
+                    <p>Pseudoluokat, animaatiot, transitions, muuttujat ja edistyneet tekniikat</p>
+                    <a href="WS03_CSS_Advanced/tuntiharjoitus/index.html" class="workshop-link">Tuntiharjoitus →</a>
+                    <a href="WS03_CSS_Advanced/" class="workshop-link secondary">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">04</div>
+                    <h3>Layout</h3>
+                    <p>Flexbox, CSS Grid ja modernit asettelutekniikat</p>
+                    <a href="WS04_Layout/" class="workshop-link">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">05</div>
+                    <h3>Responsiivisuus</h3>
+                    <p>Media queryt, mobiili-ensimmäinen suunnittelu ja skaalautuvuus</p>
+                    <a href="WS05_Responsive/" class="workshop-link">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">06</div>
+                    <h3>Bootstrap</h3>
+                    <p>Bootstrap-framework, komponendit ja grid-järjestelmä</p>
+                    <a href="WS06_Bootstrap/" class="workshop-link">Kansio →</a>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-number">07</div>
+                    <h3>Projektityö</h3>
+                    <p>Kurssin lopputyö, jossa yhdistetään kaikki opitut taidot</p>
+                    <a href="WS07_Projektityo/" class="workshop-link">Kansio →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <h2>Resurssit</h2>
+            <ul class="resource-list">
+                <li><a href="readme.md" target="_blank">📄 Kurssin README</a></li>
+                <li><a href="https://github.com/Laurea-ammattikorkeakoulu-Tikkurila/Websivuston_kehittaminen_Syksy_2025"
+                        target="_blank">💻 GitHub Repository</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Laurea-ammattikorkeakoulu | Web-sivuston kehittäminen</p>
+    </footer>
 </body>
 
 </html>

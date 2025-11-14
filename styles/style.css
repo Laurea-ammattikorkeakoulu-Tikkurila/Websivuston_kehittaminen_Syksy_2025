@@ -1,23 +1,253 @@
-h1 {
-  color: #4a90e2;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: #7b4397;
-  font-size: 1.8rem;
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-p {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #f5f7fa;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+}
+
+.student-info {
   font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  text-align: justify;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Course Intro Section */
+.course-intro {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.course-intro h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.course-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Workshops Section */
+.workshops {
+  margin-bottom: 3rem;
+}
+
+.workshops h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Workshop Grid */
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.workshop-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.workshop-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.workshop-number {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.workshop-card h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.workshop-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.workshop-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.workshop-link:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateX(3px);
+}
+
+.workshop-link.secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.workshop-link.secondary:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* Resources Section */
+.resources {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.resources h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  margin-bottom: 1rem;
+}
+
+.resource-list a {
+  display: inline-block;
+  color: #667eea;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.resource-list a:hover {
+  color: #764ba2;
+  transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 1rem;
+  }
 }
