@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Workshop</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Responsiivinen Web-suunnittelu</h1>
+            <p>Mobile-first design ja media queryt</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#intro">Johdanto</a></li>
+                <li><a href="#breakpoints">Breakpoints</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#images">Kuvat</a></li>
+                <li><a href="#typography">Typografia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="intro" class="section">
+            <h2>Mikä on responsiivinen suunnittelu?</h2>
+            <div class="info-box">
+                <p>Responsiivinen web-suunnittelu tarkoittaa, että verkkosivusto mukautuu automaattisesti eri
+                    näyttökokoihin ja laitteisiin. Sama sisältö näyttää hyvältä sekä mobiililaitteissa, tableteissa että
+                    työpöytätietokoneissa.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">📱</div>
+                    <h3>Mobile-first</h3>
+                    <p>Suunnittelu aloitetaan mobiililaitteista ja laajennetaan suuremmille näytöille</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📐</div>
+                    <h3>Media Queryt</h3>
+                    <p>CSS-säännöt, jotka aktivoituvat tietyllä näyttökoolla</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔄</div>
+                    <h3>Joustavuus</h3>
+                    <p>Käytetään prosentteja ja relatiivisia yksiköitä kiinteiden sijaan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breakpoints Section -->
+        <section id="breakpoints" class="section">
+            <h2>Breakpoint-esimerkit</h2>
+            <div class="info-box">
+                <p>Breakpointit ovat näyttökokoja, joissa sivuston layout muuttuu. Yleisimmät breakpointit:</p>
+                <ul>
+                    <li><strong>480px</strong> - Pienet mobiililaitteet</li>
+                    <li><strong>768px</strong> - Tabletit pystysuunnassa</li>
+                    <li><strong>1024px</strong> - Tabletit vaakasuunnassa / pienet kannettavat</li>
+                    <li><strong>1200px</strong> - Työpöytätietokoneet</li>
+                </ul>
+            </div>
+
+            <div class="breakpoint-demo">
+                <div class="demo-box box-1">1 Palsta</div>
+                <div class="demo-box box-2">2 Palstaa tabletissa</div>
+                <div class="demo-box box-3">3 Palstaa desktopissa</div>
+                <div class="demo-box box-4">Mukautuva laatikko</div>
+            </div>
+
+            <div class="resize-hint">
+                💡 <strong>Vinkki:</strong> Muuta selaimen ikkunan kokoa nähdäksesi muutokset!
+            </div>
+        </section>
+
+        <!-- Layout Section -->
+        <section id="layout" class="section">
+            <h2>Responsiiviset layout-tekniikat</h2>
+
+            <h3>1. Flexbox - Mukautuva navigaatio</h3>
+            <nav class="responsive-nav">
+                <a href="#" class="nav-item">Etusivu</a>
+                <a href="#" class="nav-item">Palvelut</a>
+                <a href="#" class="nav-item">Portfolio</a>
+                <a href="#" class="nav-item">Yhteystiedot</a>
+            </nav>
+
+            <h3>2. CSS Grid - Responsiivinen korttiasettelu</h3>
+            <div class="card-grid">
+                <article class="content-card">
+                    <div class="card-image">🎨</div>
+                    <h4>Design</h4>
+                    <p>Luomme moderneja ja käyttäjäystävällisiä käyttöliittymiä.</p>
+                </article>
+                <article class="content-card">
+                    <div class="card-image">💻</div>
+                    <h4>Kehitys</h4>
+                    <p>Toteutamme verkkosivustot uusimmilla teknologioilla.</p>
+                </article>
+                <article class="content-card">
+                    <div class="card-image">📱</div>
+                    <h4>Mobiili</h4>
+                    <p>Sivustot toimivat saumattomasti kaikilla laitteilla.</p>
+                </article>
+                <article class="content-card">
+                    <div class="card-image">🚀</div>
+                    <h4>Optimointi</h4>
+                    <p>Nopeat latausajat ja tehokas suorituskyky.</p>
+                </article>
+            </div>
+
+            <h3>3. Sidebar layout - Responsiivinen sivupalkki</h3>
+            <div class="sidebar-layout">
+                <aside class="sidebar">
+                    <h4>Sivupalkki</h4>
+                    <ul>
+                        <li>Linkki 1</li>
+                        <li>Linkki 2</li>
+                        <li>Linkki 3</li>
+                        <li>Linkki 4</li>
+                    </ul>
+                </aside>
+                <div class="main-content">
+                    <h4>Pääsisältö</h4>
+                    <p>Tämä layout muuttuu mobiililaitteissa niin, että sivupalkki siirtyy pääsisällön alle. Tabletissa
+                        ja työpöytänäytöillä ne ovat vierekkäin.</p>
+                    <p>Tämä on hyvin yleinen ratkaisu verkkosivustoilla, joissa on navigaatio tai lisätietoja
+                        sivupalkissa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images Section -->
+        <section id="images" class="section">
+            <h2>Responsiiviset kuvat</h2>
+            <div class="info-box">
+                <p>Kuvat skaalautuvat automaattisesti käyttämällä <code>max-width: 100%</code> ja
+                    <code>height: auto</code>.
+                </p>
+            </div>
+
+            <div class="image-examples">
+                <div class="image-box">
+                    <div class="responsive-image">
+                        <div class="placeholder-image">🖼️ Responsiivinen kuva</div>
+                    </div>
+                    <p class="caption">Kuva skaalautuu aina säiliön leveyteen</p>
+                </div>
+                <div class="image-box">
+                    <div class="responsive-image">
+                        <div class="placeholder-image">🌅 Toinen kuva</div>
+                    </div>
+                    <p class="caption">Kuvasuhde säilyy automaattisesti</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography" class="section">
+            <h2>Responsiivinen typografia</h2>
+            <div class="info-box">
+                <p>Fonttikoot mukautuvat näyttökoon mukaan käyttämällä relatiivisia yksiköitä (rem, em) tai
+                    viewport-yksiköitä (vw, vh).</p>
+            </div>
+
+            <div class="typography-example">
+                <h1 class="responsive-heading">Responsiivinen otsikko H1</h1>
+                <h2 class="responsive-heading">Responsiivinen otsikko H2</h2>
+                <p class="responsive-text">Tämä kappale käyttää responsiivista fonttikokoa. Fonttikoko muuttuu sujuvasti
+                    näyttökoon mukaan, tehden tekstistä helpommin luettavan eri laitteilla.</p>
+            </div>
+        </section>
+
+        <!-- Viewport Info -->
+        <section class="section viewport-info">
+            <h2>Nykyinen näyttökoko</h2>
+            <div class="viewport-display">
+                <p class="mobile-only">📱 <strong>Mobiili</strong> - Näytön leveys alle 768px</p>
+                <p class="tablet-only">📲 <strong>Tabletti</strong> - Näytön leveys 768px - 1024px</p>
+                <p class="desktop-only">💻 <strong>Työpöytä</strong> - Näytön leveys yli 1024px</p>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section class="section">
+            <h2>Parhaat käytännöt</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>✅ TEE</h3>
+                    <ul>
+                        <li>Käytä mobile-first -lähestymistapaa</li>
+                        <li>Testaa kaikilla laitteilla</li>
+                        <li>Käytä joustavaa layoutia</li>
+                        <li>Optimoi kuvat eri kokoihin</li>
+                        <li>Käytä relatiivisia yksiköitä</li>
+                    </ul>
+                </div>
+                <div class="tip-card negative">
+                    <h3>❌ VÄLTÄ</h3>
+                    <ul>
+                        <li>Älä käytä kiinteitä pikseliarvoja</li>
+                        <li>Älä unohda viewport metatägiä</li>
+                        <li>Älä piilota tärkeää sisältöä mobiilissa</li>
+                        <li>Älä käytä liian pieniä painikkeita</li>
+                        <li>Älä tee liian monimutkaisia layouteja</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Laurea Responsive Design Workshop</p>
+            <p>Muuta selaimen kokoa nähdäksesi responsiiviset muutokset!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
