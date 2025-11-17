@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Workshop - Flexbox & Grid</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>CSS Layout Workshop</h1>
+        <p>Exploring Flexbox and CSS Grid</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#flexbox">Flexbox</a>
+        <a href="#grid">CSS Grid</a>
+        <a href="#page-layout">Page Layout</a>
+        <a href="#examples">Examples</a>
+    </nav>
+
+    <main class="container">
+        <!-- Flexbox Section -->
+        <section id="flexbox" class="section">
+            <h2>Flexbox Examples</h2>
+
+            <div class="example-box">
+                <h3>1. Basic Flexbox Row</h3>
+                <div class="flex-container flex-row">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                    <div class="flex-item">Item 4</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>2. Flexbox with Space Between</h3>
+                <div class="flex-container flex-space-between">
+                    <div class="flex-item">Left</div>
+                    <div class="flex-item">Middle</div>
+                    <div class="flex-item">Right</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>3. Centered Content with Flexbox</h3>
+                <div class="flex-container flex-center">
+                    <div class="flex-item">Perfectly Centered!</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>4. Flexbox Column Layout</h3>
+                <div class="flex-container flex-column">
+                    <div class="flex-item">Top</div>
+                    <div class="flex-item">Middle</div>
+                    <div class="flex-item">Bottom</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>5. Flex Wrap (Responsive Cards)</h3>
+                <div class="flex-container flex-wrap">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                    <div class="card">Card 4</div>
+                    <div class="card">Card 5</div>
+                    <div class="card">Card 6</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS Grid Section -->
+        <section id="grid" class="section">
+            <h2>CSS Grid Examples</h2>
+
+            <div class="example-box">
+                <h3>1. Basic Grid (3 Columns)</h3>
+                <div class="grid-container grid-3col">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>2. Grid with Auto-fit (Responsive)</h3>
+                <div class="grid-container grid-auto-fit">
+                    <div class="grid-item">A</div>
+                    <div class="grid-item">B</div>
+                    <div class="grid-item">C</div>
+                    <div class="grid-item">D</div>
+                    <div class="grid-item">E</div>
+                    <div class="grid-item">F</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>3. Grid with Different Sizes</h3>
+                <div class="grid-container grid-template">
+                    <div class="grid-item grid-large">Large (span 2x2)</div>
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>4. Grid Gap Example</h3>
+                <div class="grid-container grid-gap">
+                    <div class="grid-item">Box 1</div>
+                    <div class="grid-item">Box 2</div>
+                    <div class="grid-item">Box 3</div>
+                    <div class="grid-item">Box 4</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Layout Section -->
+        <section id="page-layout" class="section">
+            <h2>Complete Page Layout Example</h2>
+
+            <div class="example-box">
+                <h3>Modern Page Layout with Grid</h3>
+                <div class="page-layout">
+                    <div class="page-header">Header</div>
+                    <div class="page-sidebar">Sidebar</div>
+                    <div class="page-content">Main Content</div>
+                    <div class="page-footer">Footer</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Examples -->
+        <section id="examples" class="section">
+            <h2>Practical Examples</h2>
+
+            <div class="example-box">
+                <h3>Navigation Bar (Flexbox)</h3>
+                <nav class="nav-example">
+                    <div class="nav-brand">Logo</div>
+                    <div class="nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="example-box">
+                <h3>Product Grid (CSS Grid)</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🎨</div>
+                        <h4>Product 1</h4>
+                        <p>€29.99</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🎭</div>
+                        <h4>Product 2</h4>
+                        <p>€39.99</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🎪</div>
+                        <h4>Product 3</h4>
+                        <p>€49.99</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🎬</div>
+                        <h4>Product 4</h4>
+                        <p>€59.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>Card Layout with Flexbox</h3>
+                <div class="card-container">
+                    <div class="info-card">
+                        <h4>Feature 1</h4>
+                        <p>This card uses Flexbox for flexible alignment and spacing.</p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                    <div class="info-card">
+                        <h4>Feature 2</h4>
+                        <p>Cards automatically adjust to available space and content.</p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                    <div class="info-card">
+                        <h4>Feature 3</h4>
+                        <p>Responsive design makes cards stack on smaller screens.</p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Laurea CSS Layout Workshop | Created with Flexbox & Grid</p>
+    </footer>
+</body>
+
+</html>
